@@ -7,7 +7,7 @@
 
 
 
-#conditional statement
+#conditional statement  we use it to make our program intellegent
 # a=0
 # if a:
 #     print("Yes")
@@ -60,7 +60,7 @@ num3=12
 # else:
 #     print("Error")
 
-#wap to find smallest
+#wap to find smallest    diff. b/w multiple if and elif is n multiple if is non terminating process but elif is terminating process.
 num1=3
 num2=9
 num3=12
