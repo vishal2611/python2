@@ -43,10 +43,19 @@
 #     i-=1    #reverse printing
 
 #wap to print only even number from 10 to 20
-strt=10
+# strt=10
+# end=20
+# while strt <= end:
+#     if strt%2==0:
+#         print(strt)
+#     strt+=1
+
+
+#wap to print only odd numbers from 1 to 20
+strt=1
 end=20
-while strt <= end:
-    if strt%2==0:
+while strt<=end:
+    if strt%2 != 0:
         print(strt)
     strt+=1
 
