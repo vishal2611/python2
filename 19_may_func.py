@@ -2,6 +2,7 @@
 #function is a block of code which only runs when it is called
 #you can pass data, known as parameters, into a function.
 #Every function has their own purpose.
+# Function return none value by default if there is no return statement in the function.
 #Function is a block of instructions(code) which execute inside its own block.
 #Function is a reusable block of code which performs a specific task.(DRY-Don't Repeat Yourself )
 #Syntax of function
@@ -27,7 +28,7 @@
 #Parameters are the variables which are defined in the function definition.
 #Arguments are the values which are passed to the function when it is called.
 
-
+#Take something and return nothing
 
 # def table(n):
 #     for i in range(1, 11):
@@ -39,39 +40,63 @@
 # print("-"*20)
 # table(17)
 
-def add(a, b):
-    c = a + b
-    print("Addition:", c)
+# def add(a, b):
+#     c = a + b
+#     print("Addition:", c)
 
 
-def sub(a,b):
-    c=a-b
-    print("Subtraction:", c)
+# def sub(a,b):
+#     c=a-b
+#     print("Subtraction:", c)
 
 
-def product(a,b):
-    c=a*b
-    print("Product:", c)
+# def product(a,b):
+#     c=a*b
+#     print("Product:", c)
 
 
-def div(a,b):
-    c=a/b
-    print("Division:", c)
-while True:
-    option=input("Enter the option (+, -, *, /): ")
-    if option == "0":
-        print("Exiting the program.")
-        break
-    num1=int(input("Enter the first number: "))
-    num2=int(input("Enter the second number: "))
+# def div(a,b):
+#     c=a/b
+#     print("Division:", c)
+# while True:
+#     option=input("Enter the option (+, -, *, /): ")
+#     if option == "0":
+#         print("Exiting the program.")
+#         break
+#     num1=int(input("Enter the first number: "))
+#     num2=int(input("Enter the second number: "))
     
-    if option=="+":
-        add(num1,num2)
-    elif option=="-":
-        sub(num1,num2)
-    elif option=="*":
-        product(num1,num2)
-    elif option=="/":
-        div(num1,num2)
-    else:
-        print("Invalid option")
+#     if option=="+":
+#         add(num1,num2)
+#     elif option=="-":
+#         sub(num1,num2)
+#     elif option=="*":
+#         product(num1,num2)
+#     elif option=="/":
+#         div(num1,num2)
+#     else:
+#         print("Invalid option")
+
+
+# def add(a, b):
+#     c = a + b
+#     return c
+# res=add(2, 3)
+# print("Addition:", res)
+
+# def add(a,b):
+#     return a+b
+# res=add(10,30)
+
+# def sub(a,c):
+#     return a-c
+# res1=sub(10, res)
+# print("Subtraction:", res1)
+
+def greet(a):
+    return a
+
+def usr_name(a):
+    return a
+
+print(greet("Hello"), usr_name("Vishal"))
